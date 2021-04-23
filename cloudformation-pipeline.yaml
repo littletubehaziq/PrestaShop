@@ -335,7 +335,7 @@ Resources:
             build:
               commands:
                 - echo Building the Docker image...
-                - cd frontend/
+                - cd .docker/
                 - docker build -t $IMAGE_URI:$IMAGE_TAG .
             post_build:
               commands:
